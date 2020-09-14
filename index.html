@@ -6,13 +6,23 @@
     <title>Lucy Guida Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!--      header      -->
     <header>
-      
+      <nav>
+        <ul id="menu">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </nav>
     </header>
+
+    <hr id="nav-hr">
 
     <!--      main        -->
     <main>
@@ -34,7 +44,7 @@
 
         <!--   about div V1!  -->
         <section>
-        <div id="about" class="wrapper white">
+        <div id="intro" class="wrapper white">
           <h2>Let me introduce myself...</h2>
           <div id="coding-profile" class="group">
             <div class="item">
@@ -61,7 +71,7 @@
         <hr>
 
         <section>
-        <div class="group wrapper pink">
+        <div id="about" class="group wrapper pink">
           <div class="item">
             <h2>About Me:</h2>
             <p>During my experience with NLP, I was exposed to huge datasets that required constant data management techniques. Through this, I began to learn Python bit by bit and soon it became my favorite part of my day. This realization brought me to the world of Web development! I have spent the past several months delving deeper and deeper into WebDev and I am exited to continue to add to my toolbox! When I am not working on websites, I spend my time playing the piano, watching Spanish-language films, and fostering litters of kittens.</p>
@@ -70,7 +80,7 @@
             <img src="images/PianoOpts/piano3.jpg" alt="piano" />
           </div>
         </div>
-        <div class="group accent">
+        <div id="services" class="group accent">
           <div class="item">
             <h3>Basic Services:</h3>
             <ul>
@@ -92,34 +102,34 @@
 
         </section>
 
-        
+        <hr>
 
         <!--   projects div  -->
         <section>
-        <div class="wrapper">
+        <div id="projects" class="wrapper">
           <h2>Projects:</h2>
           <div class="group project-prev">
             <div class="item">
-              <h3>Project Title 1</h3>
+              <a href="#" target="_blank" class="project-link"><h3>Project Title 1</h3></a>
               <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-              <p> Here will go a brief description of the beautiful app I'll have made :P </p>
+              <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
             </div>
             <div class="item">
-              <h3>Project Title 2</h3>
+              <a href="#" target="_blank" class="project-link"><h3>Project Title 2</h3></a>
               <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-              <p> Here will go a brief description of the beautiful app I'll have made :P </p>
+              <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
             </div>
           </div>
           <div class="group project-prev">
             <div class="item">
-              <h3>Project Title 3</h3>
+              <a href="#" target="_blank" class="project-link"><h3>Project Title 3</h3></a>
               <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-              <p> Here will go a brief description of the beautiful app I'll have made :P </p>
+              <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
             </div>
             <div class="item">
-              <h3>Project Title 4</h3>
+              <a href="#" target="_blank" class="project-link"><h3>Project Title 4</h3></a>
               <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-              <p> Here will go a brief description of the beautiful app I'll have made :P </p>
+              <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
             </div>
           </div>
         </div>
@@ -129,12 +139,31 @@
         <section>
         <div id="contact" class="wrapper pink">
           <h2>Contact</h2>
-          <p> Feel free to reach out to me on social media!</p>
-          <ul>
-           <li><a href="https://www.linkedin.com/in/lucy-guida-984263140/" target="_blank">LinkedIn</a></li>
-           <li><a href="mailto:lguida120@gmail.com">Email</a></li>
-            <li><a href="https://github.com/lguida" target="_blank">GitHub</a></li>
-          </ul>
+          <div class="group">
+            <div class="item">
+              <p> Feel free to reach out to me on social media!</p>
+              <ul>
+                <li><a href="https://www.linkedin.com/in/lucy-guida-984263140/" target="_blank" class="contact-link">LinkedIn</a></li>
+                <li><a href="mailto:lguida120@gmail.com" class="contact-link">Email</a></li>
+                <li><a href="https://github.com/lguida" target="_blank" class="contact-link">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="item-double">
+              <form action="https://formspree.io/lguida120@gmail.com" method="post">
+                <label for="user-name">Name:</label>
+                <input id="user-name" type="text" name="name">
+
+                <label for="user-email">Email:</label>
+                <input id="user-email" type="text" name="email">
+                
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="message"></textarea>
+
+                <button type="submit">Send</button>
+
+              </form>
+            </div>
+          </div>
         </div>
         </section>
 

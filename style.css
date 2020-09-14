@@ -2,11 +2,32 @@
   box-sizing: border-box;
 }
 
-/* header, body and footer */
+/* Navigation*/
 header {
-  height: 20px;
 	background-color: #666B6A;
+  padding-bottom: 10px;
 }
+header nav{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+header nav ul{
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+hr {
+  border: 3px solid black;
+  margin: 0;
+}
+
 body{
   margin: 0;
 }
@@ -46,7 +67,7 @@ footer{
 
 /* Groups & Items  (Desktop) */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   .wrapper {
     width: 100%;
     margin: auto;
@@ -55,13 +76,14 @@ footer{
   .group {
     flex-direction: row;
   }
+
 }
 
 h1, h2, h3{
   text-align: center;
   font-family:  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-p, ul, ol{
+p, ul, ol, label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 20px;
 }
@@ -69,7 +91,7 @@ p, ul, ol{
 /* these make the heading bigger */
 h1 {
   font-size: 68px;
-  color:  rgb(0, 0, 0);
+  color:  black;
   text-shadow: 3px 0 3px #403933;
   /*margin: 300px 0 0 0;*/
 }
@@ -116,11 +138,20 @@ img {
   width: 100%;
 }
 
+.project-link{
+  text-decoration: none;
+}
+
+.project-link:link{color: black}
+.project-link:visted{color: black}
+.project-link:hover{color: #666B6A}
+.project-link:active{color: lightgrey}
+
 /* link pseudo-classes */
-a:link    { color: #C9035C;  }
-a:visited { color: #C9035C;   }
-a:hover   { color: #F28F3B; }
-a:active  { color: #EEF5DB;  }
+.contact-link:link    { color: #C9035C;  }
+.contact-link:visited { color: #C9035C;   }
+.contact-link:hover   { color: #F28F3B; }
+.contact-link:active  { color: #EEF5DB;  }
 
 /* Spacers (for now)*/
 .gap-sm {
@@ -134,4 +165,19 @@ a:active  { color: #EEF5DB;  }
 .gap-lg {
     height: 200px;
     width: auto;
+}
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
