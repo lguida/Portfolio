@@ -82,6 +82,10 @@ I'm hoping to make them spread across the screen and be responsive but I suspect
   color: #FFFFFF;
 }
 
+.project-prev{
+  margin: 0 10px 0 10px;
+}
+
 /* Groups & Items  (Desktop) */
 
 @media all and (min-width: 800px) {
@@ -146,11 +150,6 @@ TODO: curretly it is centered, but I'd like to make it span the bottom and be fl
   width: 100%;
 }
 
-/* ughhh I cannot figure out why this isn't selecting the group I want! I want to add a margin like the rest of the page has but I can't figure it out at the moment */
-
-.project-prev{
-  margin: 0 10px 0 10px;
-}
 
 img {
   width: 100%;
