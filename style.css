@@ -5,7 +5,8 @@
 /* Navigation*/
 header {
 	background-color: #666B6A;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+  font-size: 12px;
 }
 header nav{
   padding-top: 20px;
@@ -20,7 +21,7 @@ header nav ul{
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
 }
 
 hr {
@@ -65,18 +66,49 @@ footer{
   margin: 10px;
 }
 
+/* these add the background boxes
+I'm hoping to make them spread across the screen and be responsive but I suspect material later in the course will help with that.*/
+.pink{
+  background: #FFD5C2;
+  padding: 10px 10px;
+}
+.white{
+  background: #FFFFFF;
+  padding: 10px 10px;
+}
+.accent{
+  background: #588B8B;
+  padding: 10px 10px;
+  color: #FFFFFF;
+}
+
 /* Groups & Items  (Desktop) */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   .wrapper {
     width: 100%;
     margin: auto;
+  }
+
+  header {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  header nav ul li a {
+    margin: 0 20px 0 0;
   }
 
   .group {
     flex-direction: row;
   }
 
+  .pink, .accent, .white{
+  padding: 10px 100px;
+  }
+  .project-prev{
+  margin: 0 60px 0 60px;
+}
 }
 
 h1, h2, h3{
@@ -98,21 +130,7 @@ h1 {
 h2 {
   font-size: 30px;
 }
-/* these add the background boxes
-I'm hoping to make them spread across the screen and be responsive but I suspect material later in the course will help with that.*/
-.pink{
-  background: #FFD5C2;
-  padding: 10px 100px;
-}
-.white{
-  background: #FFFFFF;
-  padding: 10px 100px;
-}
-.accent{
-  background: #588B8B;
-  padding: 10px 60px;
-  color: #FFFFFF;
-}
+
 /* styling footer image
 TODO: curretly it is centered, but I'd like to make it span the bottom and be flexible. haven't entirely decided how to do that yet.*/
 .footer-img {
@@ -131,7 +149,7 @@ TODO: curretly it is centered, but I'd like to make it span the bottom and be fl
 /* ughhh I cannot figure out why this isn't selecting the group I want! I want to add a margin like the rest of the page has but I can't figure it out at the moment */
 
 .project-prev{
-  margin: 0 60px 0 60px;
+  margin: 0 10px 0 10px;
 }
 
 img {
@@ -142,10 +160,20 @@ img {
   text-decoration: none;
 }
 
-.project-link:link{color: black}
-.project-link:visted{color: black}
-.project-link:hover{color: #666B6A}
-.project-link:active{color: lightgrey}
+.project-link:link{color: black;}
+.project-link:visited{color: black;}
+.project-link:hover{color: #666B6A;}
+.project-link:active{color: lightgrey;}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.centered p{
+  margin: 0;
+}
 
 /* link pseudo-classes */
 .contact-link:link    { color: #C9035C;  }
