@@ -4,7 +4,7 @@
 
 /* Navigation*/
 header {
-	background-color: #666B6A;
+	background-color: #C3B299;
   padding-bottom: 0px;
   font-size: 12px;
 }
@@ -19,31 +19,36 @@ header nav ul{
   list-style: none;
 }
 header nav ul li a {
-  color: #fff;
+  color:black;
   text-decoration: none;
   margin: 0 10px 0 0;
 }
 
-hr {
-  border: 3px solid black;
-  margin: 0;
-}
+header nav ul li a:hover{color: #6C6F7D;}
+
 
 body{
   margin: 0;
 }
 footer{
   height: 84px;
-	background-color: #666B6A;
+	background-color: #6C6F7D;
 }
 
 /* the main title with the photo */
 .big-picture{
-  background-image: url("images/cactus.jpg");
+  background-image: url("images/coffee.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align:center;
+  padding: 20px 0px 50px 0px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 250px;
+  border: 1px solid white;
 }
 
 /* this is what makes the content centered */
@@ -67,19 +72,24 @@ footer{
 }
 
 /* these add the background boxes
-I'm hoping to make them spread across the screen and be responsive but I suspect material later in the course will help with that.*/
+I changed the colors so the classNames don't describe the right color anymore*/
+
 .pink{
-  background: #FFD5C2;
+  background: #C3B299;
   padding: 10px 10px;
 }
 .white{
   background: #FFFFFF;
-  padding: 10px 10px;
+  padding: 20px 10px;
 }
 .accent{
-  background: #588B8B;
+  background: #6C6F7D;
   padding: 10px 10px;
   color: #FFFFFF;
+}
+
+#projects {
+  padding-top: 30px;
 }
 
 .project-prev{
@@ -108,8 +118,11 @@ I'm hoping to make them spread across the screen and be responsive but I suspect
   }
 
   .pink, .accent, .white{
-  padding: 10px 100px;
+  padding: 30px 100px;
   }
+
+  
+
   .project-prev{
   margin: 0 60px 0 60px;
 }
@@ -117,37 +130,29 @@ I'm hoping to make them spread across the screen and be responsive but I suspect
 
 h1, h2, h3{
   text-align: center;
-  font-family:  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:  'Fraunces', serif;
 }
-p, ul, ol, label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+p, ul, ol, label, form input[type='text'] {
+  font-family: 'Open Sans', sans-serif;
   line-height: 20px;
 }
 
 /* these make the heading bigger */
 h1 {
   font-size: 68px;
-  color:  black;
-  text-shadow: 3px 0 3px #403933;
-  /*margin: 300px 0 0 0;*/
+  color: #FFFCFF !important;
 }
 h2 {
   font-size: 30px;
 }
 
-/* styling footer image
-TODO: curretly it is centered, but I'd like to make it span the bottom and be flexible. haven't entirely decided how to do that yet.*/
-.footer-img {
-  height: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
+.project-prev img {
+  margin: 20px 0px;
 }
 
-.circle-img{
-  border-radius: 50%;
-  width: 100%;
+.project-prev .item{ 
+  margin: 20px;
 }
 
 
@@ -155,14 +160,40 @@ img {
   width: 100%;
 }
 
-.project-link{
+/* Project buttons */ 
+
+.project-buttons .project-link  {
+  text-align: center;
+  text-decoration: none;
+  border-radius:  3px;
+  transition-duration: .2s;
+  border: 2px solid #6C6F7D;
+  margin: 5px;
+  background-color: #CBD4C2;
+
+}
+
+.project-buttons .project-link a {
+  color:black;
+  padding: 5px 0px;
+}
+
+.project-buttons .project-link a:hover {
+  background-color: #F3EFF5;
+  text-decoration: none;
+  color: black;
+}
+
+
+.project-title{
   text-decoration: none;
 }
 
-.project-link:link{color: black;}
-.project-link:visited{color: black;}
-.project-link:hover{color: #666B6A;}
-.project-link:active{color: lightgrey;}
+.project-title:link{color: black;}
+.project-title:visited{color: black;}
+.project-title:hover{color: #666B6A;}
+.project-title:active{color: lightgrey;}
+
 
 .centered{
   display: flex;
@@ -180,19 +211,6 @@ img {
 .contact-link:hover   { color: #F28F3B; }
 .contact-link:active  { color: #EEF5DB;  }
 
-/* Spacers (for now)*/
-.gap-sm {
-    height: 25px;
-    width: auto;
-}
-.gap-md {
-    height: 100px;
-    width: auto;
-}
-.gap-lg {
-    height: 200px;
-    width: auto;
-}
 
 form {
   padding-right: 6px;
@@ -205,6 +223,50 @@ form textarea {
   margin-bottom: 20px;
 }
 
+form input {
+  height: 30px;
+}
+
 form textarea {
   height: 160px;
+}
+
+#contact button {
+  background-color: #CBD4C2;
+  border-radius:  3px;
+  transition-duration: .2s;
+  border: 2px solid #6C6F7D;
+  padding: 5px 15px;
+}
+
+#contact button:hover {
+  background-color: #F3EFF5;
+  cursor: pointer;
+}
+
+.icon{
+  width: 50px;
+}
+#contact ul{
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+#contact li{
+  margin: 10px;
+}
+
+footer {
+  height: 50px;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+  padding-top: 15px
+}
+
+.unbury{
+  border-radius: 40px;
 }

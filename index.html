@@ -7,6 +7,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Open+Sans&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -23,19 +28,25 @@
       </nav>
     </header>
 
-    <hr id="nav-hr">
+
 
     <!--      main        -->
     <main>
+
       <div>
         <section>
           <div>
             <div class="big-picture">
               <div class="wrapper">
+                <!--
                 <div class="gap-sm"></div>
-                <h1 class="headline">Lucy Guida</h1>
+               
                 <div class="gap-lg"></div>
+                
               <div class="gap-md"></div>
+              -->
+              <h1 class="headline">Lucy Guida</h1>
+              <img class="profile-pic" src="images/me.jpeg" alt="Profile picture"/>
               </div>
             </div>
           </div>
@@ -43,7 +54,7 @@
 
         <!--    info div    -->
 
-        <hr>
+       
 
         <!--   about div V1!  -->
         <section>
@@ -63,14 +74,14 @@
                     </ol>
                   </div>
                 </div>
+                <!--
                 <div class="item">
                   <img class="circle-img" src="images/me.jpeg" alt="Profile picture"/>
                 </div>
+                -->
               </div>
             </div>
         </section>
-
-        <hr>
 
         <section>
           <div id="about" class="group wrapper pink">
@@ -114,72 +125,48 @@
 
         </section>
 
-        <hr>
-
         <!--   projects div  -->
         <section>
           <div id="projects" class="wrapper">
             <h2>Projects:</h2>
             <div class="group project-prev">
               <div class="item">
-                <a href="https://lguida.github.io/unbury-your-gays/" target="_blank" class="project-link"><h3>Unbury Your Gays</h3></a>
-                <img src="images/project-pics/browse_screenshot.png" alt="Unbury Your Gays"/>
+                <a href="https://lguida.github.io/unbury-your-gays/" target="_blank" class="project-title"><h3>Unbury Your Gays</h3></a>
+                <img class='unbury' src="images/icons/unbury.png" alt="Unbury Your Gays"/>
                 <p> <b>Description:</b> A search app for LGBTQ+ movies and tv shows. It allows users to browse titles they might not know and to search title by genre, language, actors, etc.<br> 
                   <br><b>Skills used:</b> HTML, CSS, JavaScript, jQuery, Asynchronous Fetch Requests</p>
-                <div class="group">
+                <div class="group project-buttons">
                   <div class="item">
-                    <a href="https://lguida.github.io/unbury-your-gays/" target="_blank" class="project-link centered"><p>Live site</p></a> 
+                    <p class="project-link">
+                      <a href="https://lguida.github.io/unbury-your-gays/" target="_blank" class="centered">Live site</a>
+                    </p>
                   </div>
                   <div class="item">
-                    <a href="https://github.com/lguida/unbury-your-gays" target="_blank" class="project-link centered"><p>GitHub Repo</p></a>
+                    <p class="project-link">
+                      <a href="https://github.com/lguida/unbury-your-gays" target="_blank" class="centered">GitHub Repo</a>
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <a href="#" target="_blank" class="project-link"><h3>Schedulease</h3></a>
-                <img src="images/placeholder-light.jpg" alt="Schedulease"/>
+                <a href="#" target="_blank" class="project-title"><h3>Schedulease</h3></a>
+                <img src="images/icons/schedulease.png" alt="Schedulease"/>
                 <p> <b>Description:</b> Schedulease is a full-stack app that allows users to create complicated schedules for large groups with various roles to play. The app joins an interactive, password-protected React front end with a customized Express back end.
                   <br> <br> <b>Skills used:</b> HTML, CSS, JavaScript, RESTful APIs, Express, Node, PostgreSQL, React, NPM</p>
-                <div class="group">
+                <div class="group project-buttons">
                   <div class="item">
-                    <a href="https://schedulease.vercel.app/" target="_blank" class="project-link centered"><p>Live site</p></a> 
+                    <p class="project-link">
+                      <a href="https://schedulease.vercel.app/" target="_blank" class="centered">Live site</a>
+                    </p> 
                   </div>
                   <div class="item">
-                    <a href="https://github.com/lguida/schedulease" target="_blank" class="project-link centered"><p>GitHub Repo</p></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 
-            <div class="group project-prev">
-              <div class="item">
-                <a href="#" target="_blank" class="project-link"><h3>Project Title 3</h3></a>
-                <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-                <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
-                <div class="group">
-                  <div class="item">
-                    <a href="#" target="_blank" class="project-link centered"><p>Live site</p></a> 
-                  </div>
-                  <div class="item">
-                    <a href="#" target="_blank" class="project-link centered"><p>GitHub Repo</p></a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <a href="#" target="_blank" class="project-link"><h3>Project Title 4</h3></a>
-                <img src="images/placeholder-light.jpg" alt="Project Preview 1"/>
-                <p> Here will go a brief description of the beautiful app I'll have made :P <br> Skills used:</p>
-                <div class="group">
-                  <div class="item">
-                    <a href="#" target="_blank" class="project-link centered"><p>Live site</p></a> 
-                  </div>
-                  <div class="item">
-                    <a href="#" target="_blank" class="project-link centered"><p>GitHub Repo</p></a>
+                    <p class="project-link">
+                      <a href="https://github.com/lguida/schedulease" target="_blank" class="centered">GitHub Repo</a>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            -->
           </div>
         </section>
 
@@ -191,9 +178,15 @@
               <div class="item">
                 <p> Feel free to reach out to me on social media!</p>
                 <ul>
-                  <li><a href="https://www.linkedin.com/in/lucy-guida-984263140/" target="_blank" class="contact-link">LinkedIn</a></li>
-                  <li><a href="mailto:lguida120@gmail.com" class="contact-link">Email</a></li>
-                  <li><a href="https://github.com/lguida" target="_blank" class="contact-link">GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/lucy-guida-984263140/" target="_blank" class="contact-link">
+                    <img class='icon' src="./images/icons/linkedin-brands.svg" alt="LinkedIn">
+                  </a></li>
+                  <li><a href="mailto:lguida120@gmail.com" class="contact-link">
+                    <img class='icon' src="./images/icons/envelope-square-solid.svg" alt="Email Address">
+                  </a></li>
+                  <li><a href="https://github.com/lguida" target="_blank" class="contact-link">
+                    <img class='icon' src="./images/icons/github-square-brands.svg" alt="GitHub">
+                  </a></li>
                 </ul>
               </div>
               <div class="item-double">
@@ -223,7 +216,7 @@
     <!--       footer      -->
     <footer>
       <div>
-        <p>Copyright</p>
+        <p>©Lucy Guida<p>
       </div>
     </footer>
 
